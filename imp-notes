@@ -1,0 +1,6 @@
+resource groups:
+    1. A resource group is created in the context of the subscription
+    2. A resource group is created for every application in every environmnet
+    3. The resource group is a container that holds related resources in azure solution
+    4. resource group also helps us to sharing the access to the team members using RBAC (role based access control)
+=============================================
