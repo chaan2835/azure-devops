@@ -15,3 +15,11 @@ Redundancy types in storage accounts:
 
         In this we are maintaing the 3 copies of our data in 3 datacentes in 3 different zones.
         If any chance the 1st datacenter is down then we will able to fetch the data from the remaining datacenters. In this also there maybe a change of losing data when all the datacentes went down.
+
+    3. GRS (Geo redundant storage):
+
+        In this the microsoft will store our data using LRS in one region with one datacenter and 3 server copies and at the same time microsoft will also store our data in a different region in different datacenter with 3 servers of data just like the replica with LRS.
+
+    4. GZRS (Geo zone redundant storage):
+
+        In this we will get ZRS and for this we wil get the replica with LRS.
