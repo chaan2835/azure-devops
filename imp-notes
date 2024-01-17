@@ -4,3 +4,9 @@ resource groups:
     3. The resource group is a container that holds related resources in azure solution
     4. resource group also helps us to sharing the access to the team members using RBAC (role based access control)
 =============================================
+storage accounts:
+
+Redundancy types in storage accounts:
+    1. LRS(locally redundant storage):
+
+        whenever we go and save our data in a storage account using LRS, the data is stored in a datacenter in that datacenter we have multiple servers and "our file will be stored on all the severs in the same datacenter". If we use LRS to store our data it may be a chance to loose our data.If the entire datacenter is down then we will loose the data what we stored using LRS.
