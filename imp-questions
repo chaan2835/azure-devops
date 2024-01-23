@@ -12,3 +12,11 @@ for users, multi-factor authentication, and other identity-related features.
 their access to Azure resources. It helps control access to applications, data, and other services
 based on defined policies and roles
 --------------------------------------------------
+what is the difference b//w subscription and resource group?
+subscription:
+1) A subscription is a logical container that holds the Azure resources created by a user, 
+organization, or a project.
+2) Resources within a subscription share the same policies, limits, and Azure Active Directory tenant.
+resource group:
+1) A resource group is a logical container used to organize and manage related Azure resources.
+2) Resources within a resource group share the same lifecycle, deployment model, permissions, and policies.
