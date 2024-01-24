@@ -20,3 +20,8 @@ organization, or a project.
 resource group:
 1) A resource group is a logical container used to organize and manage related Azure resources.
 2) Resources within a resource group share the same lifecycle, deployment model, permissions, and policies.
+------------------------------------------------------
+How many types of types of data storage is there ?
+two types
+1) structured : Structured data is data that has a well-defined just like an excel sheet/table format
+2) unstructured : Structured data is data that has a well-defined structured it can be any for eg: pics,videos,etc
