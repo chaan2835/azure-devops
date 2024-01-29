@@ -14,7 +14,7 @@ Redundancy types in storage accounts:
         servers and "our file will be stored on all the severs in the same datacenter". 
         If we use LRS to store our data it may be a chance to loose our data.
         If the entire datacenter is down then we will loose the data what we stored using LRS.
-![locally-redundant-storage](https://github.com/chaan2835/azure-devops/assets/92902854/bdf310aa-b85f-4feb-8265-7450aa2b3b37)
+
 
     2. ZRS (zone redundant storage):
 
@@ -22,7 +22,6 @@ Redundancy types in storage accounts:
         If any chance the 1st datacenter is down then we will able to fetch the data
         from the remaining datacenters. In this also there maybe a change of losing 
         data when all the datacentes went down.
-![locally-redundant-storage](https://github.com/chaan2835/azure-devops/assets/92902854/3a127d2d-2a80-4717-8a61-0ccd447ea636)
 
     3. GRS (Geo redundant storage):
 
@@ -30,9 +29,7 @@ Redundancy types in storage accounts:
         datacenter and 3 server copies and at the same time microsoft will also store
         our data in a different region in different datacenter with 3 servers of data 
         just like the replica with LRS.
-![locally-redundant-storage](https://github.com/chaan2835/azure-devops/assets/92902854/8a098a7f-2103-4708-8a2a-9b40b5bb36ca)
 
     4. GZRS (Geo zone redundant storage):
 
         In this we will get ZRS and for this we wil get the replica with LRS.
-![locally-redundant-storage](https://github.com/chaan2835/azure-devops/assets/92902854/2cf0a704-4955-48eb-9f54-76eb6393df12)
