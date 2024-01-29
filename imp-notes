@@ -9,16 +9,25 @@ storage accounts:
 Redundancy types in storage accounts:
     1. LRS(locally redundant storage):
 
-        whenever we go and save our data in a storage account using LRS, the data is stored in a datacenter in that datacenter we have multiple servers and "our file will be stored on all the severs in the same datacenter". If we use LRS to store our data it may be a chance to loose our data.If the entire datacenter is down then we will loose the data what we stored using LRS.
+        whenever we go and save our data in a storage account using LRS, 
+        the data is stored in a datacenter in that datacenter we have multiple
+        servers and "our file will be stored on all the severs in the same datacenter". 
+        If we use LRS to store our data it may be a chance to loose our data.
+        If the entire datacenter is down then we will loose the data what we stored using LRS.
 
     2. ZRS (zone redundant storage):
 
         In this we are maintaing the 3 copies of our data in 3 datacentes in 3 different zones.
-        If any chance the 1st datacenter is down then we will able to fetch the data from the remaining datacenters. In this also there maybe a change of losing data when all the datacentes went down.
+        If any chance the 1st datacenter is down then we will able to fetch the data
+        from the remaining datacenters. In this also there maybe a change of losing 
+        data when all the datacentes went down.
 
     3. GRS (Geo redundant storage):
 
-        In this the microsoft will store our data using LRS in one region with one datacenter and 3 server copies and at the same time microsoft will also store our data in a different region in different datacenter with 3 servers of data just like the replica with LRS.
+        In this the microsoft will store our data using LRS in one region with one 
+        datacenter and 3 server copies and at the same time microsoft will also store
+        our data in a different region in different datacenter with 3 servers of data 
+        just like the replica with LRS.
 
     4. GZRS (Geo zone redundant storage):
 
