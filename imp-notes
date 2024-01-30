@@ -33,3 +33,11 @@ Redundancy types in storage accounts:
     4. GZRS (Geo zone redundant storage):
 
         In this we will get ZRS and for this we wil get the replica with LRS.
+=======================================================
+In azure there are 3 types of blobs are there:
+
+1.Block blob: All the unstructured data stored here 
+
+2.Append blob: To store the log data of vm,application servers etc
+
+3.Page blob: used to store .vhd files (virtual hardware files) these will comes when we use virtual machines
