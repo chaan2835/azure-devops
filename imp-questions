@@ -25,3 +25,8 @@ How many types of types of data storage is there ?
 two types
 1) structured : Structured data is data that has a well-defined just like an excel sheet/table format
 2) unstructured : Structured data is data that has a well-defined structured it can be any for eg: pics,videos,etc
+-----------------------------------------------------------
+what is the difference b//w shared access singature and access key/
+both are authorization techniques 
+but shared access signature can allows us on what someone can do simply it will have restrict permissions for the uses
+access key can give the admin permissions on the containers to do anything withour our knowledge 
