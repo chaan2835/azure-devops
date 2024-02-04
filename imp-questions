@@ -39,3 +39,10 @@ Archive Access tier:
   if we use this access tier for our blobs in a container then we can't access any of our blobs at any point time
 (i.e., our data will be stored in azure as a archived mode for using this mode it won't charge for storing the data
 which we are not accessing for a long period of time.) whenever we want we can change this to hot/cool access tire.
+---------------------------------------------------------------
+How to manage all the blods in a container?
+for that we are having life cycle management.under our storage accounts it will be there
+
+resource group--> storage accounts-->life cycle management
+
+under this we can create the rules for the container blobs
