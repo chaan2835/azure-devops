@@ -30,3 +30,12 @@ what is the difference b//w shared access singature and access key/
 both are authorization techniques 
 but shared access signature can allows us on what someone can do simply it will have restrict permissions for the uses
 access key can give the admin permissions on the containers to do anything withour our knowledge 
+---------------------------------------------------------------
+Hot Acceess tier:
+  the cost for the transaction is less but the cost for storing the data is high
+Cool Access tier:
+  the cost for storing is less but the cost for transaction is high
+Archive Access tier:
+  if we use this access tier for our blobs in a container then we can't access any of our blobs at any point time
+(i.e., our data will be stored in azure as a archived mode for using this mode it won't charge for storing the data
+which we are not accessing for a long period of time.) whenever we want we can change this to hot/cool access tire.
