@@ -41,3 +41,10 @@ In azure there are 3 types of blobs are there:
 2.Append blob: To store the log data of vm,application servers etc
 
 3.Page blob: used to store .vhd files (virtual hardware files) these will comes when we use virtual machines
+==========================================================
+we can lock the storage accounts to avoid deletion at resource group level
+
+storage account-->locks-->add lock
+
+lockname = donotdelete
+locktype = delete
