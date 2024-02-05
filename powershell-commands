@@ -1,0 +1,6 @@
+Out-File command is used to store the output into a file 
+
+$number | Out-File ".\sam.txt" -Append (in double quotes mention file name/ file path)
+
+the above command will take the output of $number as input and append that to sam.txt file
+============================================================================================================
