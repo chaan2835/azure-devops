@@ -4,3 +4,42 @@ $number | Out-File ".\sam.txt" -Append (in double quotes mention file name/ file
 
 the above command will take the output of $number as input and append that to sam.txt file
 ============================================================================================================
+#login to azure portal using powershell 
+
+Login-AzAccount
+COnnect-AzAccount
+
+
+
+Connect-AzAccount
+Select-AzSubscription -SubscriptionId 823c3a62-dbcb-41d9-86e8-5368d2605779
+
+Get-AzSubscription
+
+#to get all the resource groups in our account
+Get-AzResourceGroup
+Get-AzResourceGroup | Select-Object -Property ResourceGroupName
+                or
+(get-azresourcegroup).ResourceGroupName
+
+ResourceGroupName
+-----------------
+demo-1-rg        
+demo-storage-1   
+demo-rg-2        
+demo-rg-2-demo
+
+get-azresourcegroup | Select-Object location,resourcegroupname
+
+Location ResourceGroupName
+-------- -----------------
+eastus   demo-1-rg        
+eastus   demo-storage-1   
+eastus   demo-rg-2        
+eastus2  demo-rg-2-demo   
+
+
+#creating resouce groups 
+
+New-AzResourceGroup -Name <resourcegroup-name> -Location <location>
+New-AzResourceGroup -Name "powesell-rg-1" -location "East US2"
