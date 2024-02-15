@@ -7,9 +7,7 @@ the above command will take the output of $number as input and append that to sa
 #login to azure portal using powershell 
 
 Login-AzAccount
-COnnect-AzAccount
-
-
+Connect-AzAccount
 
 Connect-AzAccount
 Select-AzSubscription -SubscriptionId 823c3a62-dbcb-41d9-86e8-5368d2605779
@@ -38,8 +36,12 @@ eastus   demo-storage-1
 eastus   demo-rg-2        
 eastus2  demo-rg-2-demo   
 
+#to get the locations in our subscription
+Get-AzLocation
 
 #creating resouce groups 
 
 New-AzResourceGroup -Name <resourcegroup-name> -Location <location>
 New-AzResourceGroup -Name "powesell-rg-1" -location "East US2"
+
+
