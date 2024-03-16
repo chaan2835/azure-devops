@@ -1,10 +1,27 @@
-Out-File command is used to store the output into a file 
+Out-File command is used to store the output into a file
 
 $number | Out-File ".\sam.txt" -Append (in double quotes mention file name/ file path)
 
 the above command will take the output of $number as input and append that to sam.txt file
 ============================================================================================================
-#login to azure portal using powershell 
+
+# commands to install AZ modules
+
+run the powershell as admin user
+
+$PSVersionTable.PSVersion
+
+Get-Module -Name AzureRM -ListAvailable
+
+Get-ExecutionPolicy -List
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Install-Module -Name Az -Repository PSGallery -Force
+
+Update-Module -Name Az -Force
+
+#login to azure portal using powershell
 
 Login-AzAccount
 Connect-AzAccount
@@ -22,26 +39,24 @@ Get-AzResourceGroup | Select-Object -Property ResourceGroupName
 
 ResourceGroupName
 -----------------
-demo-1-rg        
-demo-storage-1   
-demo-rg-2        
+demo-1-rg
+demo-storage-1
+demo-rg-2
 demo-rg-2-demo
 
 get-azresourcegroup | Select-Object location,resourcegroupname
 
 Location ResourceGroupName
 -------- -----------------
-eastus   demo-1-rg        
-eastus   demo-storage-1   
-eastus   demo-rg-2        
-eastus2  demo-rg-2-demo   
+eastus   demo-1-rg
+eastus   demo-storage-1
+eastus   demo-rg-2
+eastus2  demo-rg-2-demo
 
 #to get the locations in our subscription
 Get-AzLocation
 
-#creating resouce groups 
+#creating resouce groups
 
 New-AzResourceGroup -Name <resourcegroup-name> -Location <location>
 New-AzResourceGroup -Name "powesell-rg-1" -location "East US2"
-
-
