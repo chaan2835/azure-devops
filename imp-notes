@@ -1,12 +1,23 @@
 SLA: service level aggrement
 
+in azure active directory what we see in the left hand side are all called "Blades"
 
-resource groups:
+tennat id-->subscription
+
+adding user
+
+azure active directory-->users-->New user-->create new user
+
+RBAC is divided mainaly into Owner,Contributer,Reader
+resource groups: It is nothing but a place holder
     1. A resource group is created in the context of the subscription
     2. A resource group is created for every application in every environmnet
     3. The resource group is a container that holds related resources in azure solution
     4. resource group also helps us to sharing the access to the team members using RBAC (role based access control)
+
 =============================================
+while creating storage accouts follow this pattern teamname+projectname+location
+SLA-->service level agreement
 storage accounts:
 
 Redundancy types in storage accounts:
@@ -37,13 +48,24 @@ Redundancy types in storage accounts:
 
         In this we will get ZRS and for this we wil get the replica with LRS.
 =======================================================
+Hot Acceess tier:
+  the cost for the transaction is less but the cost for storing the data is high
+Cool Access tier:
+  the cost for storing is less but the cost for transaction is high
+Archive Access tier:
+  if we use this access tier for our blobs in a container then we can't access any of our blobs at any point time
+(i.e., our data will be stored in azure as a archived mode for using this mode it won't charge for storing the data
+which we are not accessing for a long period of time.) whenever we want we can change this to hot/cool access tire.
+===============================================
+resource groups-->storage accounts-->containers-->blobs
+
 In azure there are 3 types of blobs are there:
 
 1.Block blob: All the unstructured data stored here
 
 2.Append blob: To store the log data of vm,application servers etc
 
-3.Page blob: used to store .vhd files (virtual hardware files) these will comes when we use virtual machines
+3.Page blob: used to store .vhd files (virtual harddrive files) these will comes when we use virtual machines
 ==========================================================
 we can lock the storage accounts to avoid deletion at resource group level
 

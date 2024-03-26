@@ -14,7 +14,7 @@ based on defined policies and roles
 --------------------------------------------------
 what is the difference b//w subscription and resource group?
 subscription:
-1) A subscription is a logical container that holds the Azure resources created by a user, 
+1) A subscription is a logical container that holds the Azure resources created by a user,
 organization, or a project.
 2) Resources within a subscription share the same policies, limits, and Azure Active Directory tenant.
 resource group:
@@ -26,19 +26,12 @@ two types
 1) structured : Structured data is data that has a well-defined just like an excel sheet/table format
 2) unstructured : Structured data is data that has a well-defined structured it can be any for eg: pics,videos,etc
 -----------------------------------------------------------
-what is the difference b//w shared access singature and access key/
-both are authorization techniques 
+what is the difference b//w shared SAS shared access singature and access key?
+both are authorization techniques
 but shared access signature can allows us on what someone can do simply it will have restrict permissions for the uses
-access key can give the admin permissions on the containers to do anything withour our knowledge 
+access key can give the admin permissions on the containers to do anything without our knowledge
 ---------------------------------------------------------------
-Hot Acceess tier:
-  the cost for the transaction is less but the cost for storing the data is high
-Cool Access tier:
-  the cost for storing is less but the cost for transaction is high
-Archive Access tier:
-  if we use this access tier for our blobs in a container then we can't access any of our blobs at any point time
-(i.e., our data will be stored in azure as a archived mode for using this mode it won't charge for storing the data
-which we are not accessing for a long period of time.) whenever we want we can change this to hot/cool access tire.
+
 ---------------------------------------------------------------
 How to manage all the blods in a container?
 for that we are having life cycle management.under our storage accounts it will be there

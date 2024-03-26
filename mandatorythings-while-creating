@@ -1,0 +1,15 @@
+resource groups
+
+subscription --> resource group name
+                region name
+
+==============
+storage accounts
+
+subscription --> subscription name
+                 resource group name
+
+storage account name
+region
+performance
+reduandancy(LRS,GRS,ZRS,GZRS)
