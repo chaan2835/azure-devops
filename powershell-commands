@@ -1,5 +1,12 @@
 to change the colour of the output text
+
 write-host "hello-world" -ForegroundColor red
+=======================
+passing a value to a variable
+
+$x=5
+$y=6
+$x+$y will we get the output of the sum of the two variables
 
 Out-File command is used to store the output into a file
 
