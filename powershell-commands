@@ -7,6 +7,23 @@ passing a value to a variable
 $x=5
 $y=6
 $x+$y will we get the output of the sum of the two variables
+===========================
+passing the values using array and calling those values using foreach block
+
+$names=@("chandra","sekhar","dimpu","cc","adc")
+
+foreach ($name in $names){
+
+    write-host "name is $name"
+}
+
+output:
+name is chandra
+name is sekhar
+name is dimpu
+name is cc
+name is adc
+========================
 
 Out-File command is used to store the output into a file
 
