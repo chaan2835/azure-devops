@@ -23,6 +23,22 @@ name is sekhar
 name is dimpu
 name is cc
 name is adc
+------------
+using two arrays
+$names=@("chandra","sekhar","dimpu","cc","adc")
+$locations=@("Hyd","sec","chirala","meenakshi","FB")
+
+for ($i=0; $i -lt 4; $i++){
+
+    write-host "my name is $($names[$i]) and i am from $($locations[$i])"
+}
+
+output:
+
+my name is chandra and i am from Hyd
+my name is sekhar and i am from sec
+my name is dimpu and i am from chirala
+my name is cc and i am from meenakshi
 ========================
 
 Out-File command is used to store the output into a file
