@@ -57,8 +57,13 @@ Archive Access tier:
 (i.e., our data will be stored in azure as a archived mode for using this mode it won't charge for storing the data
 which we are not accessing for a long period of time.) whenever we want we can change this to hot/cool access tire.
 ===============================================
-resource groups-->storage accounts-->containers-->blobs
+to manage all the blods in a container we are having life cycle management.under our storage accounts it will be there
 
+resource group--> storage accounts-->life cycle management
+
+under this we can create the rules for the container blobs
+resource groups-->storage accounts-->containers-->blobs
+===============================================
 In azure there are 3 types of blobs are there:
 
 1.Block blob: All the unstructured data stored here
@@ -66,6 +71,11 @@ In azure there are 3 types of blobs are there:
 2.Append blob: To store the log data of vm,application servers etc
 
 3.Page blob: used to store .vhd files (virtual harddrive files) these will comes when we use virtual machines
+
+data that stored in the blods are encrypted form we need to decpryt it for that we have an option Generate SAS (shared access signature)
+
+maximum amount of data that we can store in a storage account is 500TB
+There is no limit of having containers in a storage account
 ==========================================================
 we can lock the storage accounts to avoid deletion at resource group level
 
