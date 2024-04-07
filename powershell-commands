@@ -28,7 +28,7 @@ using two arrays
 $names=@("chandra","sekhar","dimpu","cc","adc")
 $locations=@("Hyd","sec","chirala","meenakshi","FB")
 
-for ($i=0; $i -lt 4; $i++){
+for ($i=0; $i -lt $names.Length; $i++){
 
     write-host "my name is $($names[$i]) and i am from $($locations[$i])"
 }
@@ -40,7 +40,14 @@ my name is sekhar and i am from sec
 my name is dimpu and i am from chirala
 my name is cc and i am from meenakshi
 ========================
+taking input from the user
 
+$num= read-host "enter a number"
+write-host "user input num is $num"
+output:
+enter a number: 10
+user input num is 10
+=====================
 Out-File command is used to store the output into a file
 
 $number | Out-File ".\sam.txt" -Append (in double quotes mention file name/ file path)
