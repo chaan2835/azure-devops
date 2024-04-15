@@ -110,3 +110,46 @@ Get-AzLocation
 
 New-AzResourceGroup -Name <resourcegroup-name> -Location <location>
 New-AzResourceGroup -Name "powesell-rg-1" -location "East US2"
+
+getting the resouce group names
+
+$rsg_names = Get-AzResourceGroup | Where-Object {$_.ResourceGroupName -like "rg*"}
+
+output:
+
+$rsg_names
+
+
+ResourceGroupName : rg1
+Location          : eastus2
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/c4600fa7-895d-478c-8ef9-b4f30296fec8/resource
+                    Groups/rg1
+
+ResourceGroupName : rg2
+Location          : eastus2
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/c4600fa7-895d-478c-8ef9-b4f30296fec8/resource
+                    Groups/rg2
+
+ResourceGroupName : rg3
+Location          : eastus2
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/c4600fa7-895d-478c-8ef9-b4f30296fec8/resource
+                    Groups/rg3
+=======================
+
+deleting resouce groups
+
+ $rsg_names = Get-AzResourceGroup | Where-Object {$_.ResourceGroupName -like "rg*"}
+
+ foreach ($value in $rsg_names){
+
+    Write-Host "deleting $($value.ResourceGroupName)"
+    Remove-AzResourceGroup -name $value.ResourceGroupName -Force
+ }
+
+ output:

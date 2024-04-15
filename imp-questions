@@ -33,9 +33,4 @@ access key can give the admin permissions on the containers to do anything witho
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
-How to manage all the blods in a container?
-for that we are having life cycle management.under our storage accounts it will be there
-
-resource group--> storage accounts-->life cycle management
-
-under this we can create the rules for the container blobs
+How 
